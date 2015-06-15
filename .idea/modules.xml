@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TodoAssignmentAPI.iml" filepath="$PROJECT_DIR$/TodoAssignmentAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TodoAssignmentAPI-grailsPlugins.iml" filepath="$PROJECT_DIR$/TodoAssignmentAPI-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
