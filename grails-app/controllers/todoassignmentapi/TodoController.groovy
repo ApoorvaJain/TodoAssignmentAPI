@@ -11,9 +11,17 @@ class TodoController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
     static responseFormats = ['json', 'xml']
 
-    def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond Todo.list(params), model:[todoInstanceCount: Todo.count()]
+    def index() {
+
+        def responseData = Todo.list().collect{
+            [
+                id  :it.id,
+                title :it.title,
+                dueDate: it.dueDate
+            ]
+        }
+
+        respond responseData
     }
 
     def show(Todo todoInstance) {
