@@ -46,7 +46,7 @@
         <init-param>
             <description>A comma separated list of HTTP verbs, using which a CORS
                 request can be made.</description>
-            <param-name>cors.allowed.methods</param-name>
+            <param-name>cors.supportedMethods</param-name>
             <param-value>GET,POST,HEAD,OPTIONS,PUT,DELETE</param-value>
         </init-param>
         <init-param>
@@ -54,7 +54,7 @@
             <param-name>cors.allowed.headers</param-name>
             <param-value>Content-Type,X-Requested-With,X-AUTHENTICATION, X-IP,Authorization,Origin,Access-Control-Request-Method,Access-Control-Request-Headers</param-value>
         </init-param>
-        <init-param>TT
+        <init-param>
             <description>A comma separated list non-standard response headers that will be exposed to XHR2 object.</description>
             <param-name>cors.exposed.headers</param-name>
             <param-value>*</param-value>
